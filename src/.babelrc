@@ -1,0 +1,21 @@
+{
+  "presets": [
+    [ "env",
+      {
+        "modules": false,
+        "node": true,
+        "browsers": ["last 2 versions"],
+        "useBuiltIns": true
+      }
+    ],
+  ],
+  "env": {
+    "production": {
+        "presets": ["babili"]
+      }
+  },
+  plugins: [
+  "transform-class-properties",
+  "external-helpers",
+  ]
+}
